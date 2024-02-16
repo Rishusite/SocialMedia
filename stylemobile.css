@@ -109,7 +109,7 @@
   }
   .side-bar-mobile{
     position: fixed;
-    top: 8vh;
+    top: 9vh;
     right: 3vw;
     padding: 2vh 3vw;
     background-color: rgba(250, 203, 250, 0.838);
