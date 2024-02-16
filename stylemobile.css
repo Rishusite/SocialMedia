@@ -1,0 +1,125 @@
+:root{
+  --original-theme:rgb(93, 3, 238);
+  --background-theme:rgba(229, 213, 255, 0.377);
+  --background-theme2:rgba(248, 245, 252, 0.929);
+  --whitecolor:rgb(255,255,255);
+  --buttonhover:rgba(93, 3, 238, 0.7);
+  --sidebar-items-hover: rgba(189, 149, 252, 0.811);
+}
+@media only screen and (max-width: 450px){
+  /*------------------Body--------------------*/
+  body{
+    padding-left: 0;
+  }
+  /*------------------Header------------------*/
+  #searchbox{
+    display: none;
+  }
+  .navbar{
+    flex: 12;
+    .create-button{
+      button{
+        display: none;
+      }
+      #profile-pic{
+        width:11vw;
+        margin-right: 2vw;
+      }
+    }
+    #logo{
+      font-size: 7vw;
+    }
+    
+  }
+  .left-section{
+    flex:1;
+  }
+  .right-section{
+    flex: 1.5;
+    .menu-on-mobile{
+      display: block;
+    }
+  }
+  /*------------------Main--------------------*/
+  .main{
+    margin-top: 2.5vh;
+    display: grid;
+    grid-template-columns: 0.3fr 8fr 0.3fr;
+    column-gap: 1vw;
+    height: 100vh;
+  }
+  /*------------------Story--------------------*/
+  .story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3.3vw;
+  }
+  #i1,#i2,#i3,#i4,#i5,#i6{
+    height: 20vw;
+    border-radius: 3vw;
+    box-shadow: 0px 0px 15px 1px rgba(75, 75, 75, 0.806);
+  }
+  /*----------------SearchBox------------------*/
+  .search-box-content{
+    margin-top: 2vh;
+    border-radius: 9vw;
+    .search-box-place{
+      #search-box-main{
+        font-size: 5vw;
+        padding-left: 4vw;
+      }      
+    }
+    .search-box-post-button{
+      #search-button{
+        font-size: 4vw;
+        margin-top: 0.6vh;
+      }
+    }
+  }
+  /*-------------------Feed-------------------*/
+  .feed-content{
+    border-radius: 6vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    .feed-profile{
+      padding-left: 3vw;
+      padding-right: 2vw;
+      padding-top: 0.7vh;
+      padding-bottom: 1.5vh;
+      .feed-profile-dp{
+        flex : 2;
+        width: 5vw;
+      }
+      .feed-header-icon{
+        margin-top: 1vw;
+      }
+    }
+    .feed-like{
+      padding: 1.5vh 6vw;
+    }
+    .feed-img{
+      margin-left: 4.6vw;
+      border-radius: 5vw;
+    }
+  }
+  /*------------------Sidebar-----------------*/
+  .side-bar{
+    display: none;
+  }
+  .side-bar-mobile{
+    position: fixed;
+    top: 8vh;
+    right: 3vw;
+    padding: 2vh 3vw;
+    background-color: rgba(250, 203, 250, 0.838);
+    border-radius: 4vw;
+    box-shadow: 0px 0px 15px 2px rgb(162, 161, 161);
+  }
+  /*------------------Messages----------------*/
+  .messages{
+    display: none;
+  }
+  
+  
+}
